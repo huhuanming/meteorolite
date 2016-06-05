@@ -17,7 +17,8 @@ module.exports = {
         hot: true,
         inline: true,
         port: 1888,
-        host: 'localhost'
+        host: 'localhost',
+        historyApiFallback: true
     },
     devtool: 'eval',
     output: {
