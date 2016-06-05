@@ -8,7 +8,7 @@ module.exports = {
     entry: [
         'webpack/hot/dev-server',
         'webpack/hot/only-dev-server',
-        path.join(__dirname, '/app/app.js')
+        path.join(__dirname, '/app/index.js')
     ],
     // Server Configuration options
     devServer: {
