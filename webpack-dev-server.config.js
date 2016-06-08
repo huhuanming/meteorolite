@@ -36,7 +36,17 @@ module.exports = {
             },
             {
                 test: /\.(css|scss)$/,
+                exclude: path.join(__dirname, '/app/components'),
+                loader: 'style!css!sass?sourceMap=true'
+            },
+            {
+                test: /\.(css|scss)$/,
+                include: path.join(__dirname, '/app/components'),
                 loader: 'style!css?modules&localIdentName=[name]__[local]___[hash:base64:5]!sass?sourceMap=true'
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                loader: 'url-loader?importLoaders=1&limit=1000&name=/fonts/[name].[ext]'
             }
         ]
     },
