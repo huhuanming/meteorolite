@@ -13,7 +13,6 @@
     & > i {
         display: inline-block;
         width: 30px;
-        font-size: 18px;
         text-align: center;
     }
     & > span {
@@ -23,6 +22,30 @@
     }
     &:hover {
         color: #ffffff;
+    }
+}
+
+.home {
+    & > i {
+        font-size: 20px;
+    }
+}
+
+.devices {
+    & > i {
+        font-size: 17px;
+    }
+}
+
+.employees {
+    & > i {
+        font-size: 15px;
+    }
+}
+
+.settings {
+    & > i {
+        font-size: 18px;
     }
 }
 

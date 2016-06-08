@@ -4,6 +4,6 @@ import Style from './sidebar.scss';
 
 export default React.createClass({
     render() {
-        return <IndexLink {...this.props} className={Style.navLink} activeClassName={Style.activeNavLink}/>
+        return <IndexLink {...this.props} className={`${Style.navLink} ${this.props.className}`} activeClassName={Style.activeNavLink}/>
     }
 });

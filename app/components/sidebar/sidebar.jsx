@@ -9,19 +9,25 @@ export default React.createClass({
             <div className={Style.root}>
                 <ul>
                     <li>
-                        <NavIndexLink to="/">
+                        <NavIndexLink to="/" className={Style.home}>
                             <i className="fa fa-home" aria-hidden="true"></i>
                             <span>首页</span>
                         </NavIndexLink>
                     </li>
                     <li>
-                        <NavLink to="devices">
+                        <NavLink to="devices" className={Style.devices}>
                             <i className="fa fa-desktop" aria-hidden="true"></i>
                             <span>设备</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="settings">
+                        <NavLink to="employees" className={Style.employees}>
+                            <i className="fa fa-group" aria-hidden="true"></i>
+                            <span>员工</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="settings" className={Style.settings}>
                             <i className="fa fa-cog" aria-hidden="true"></i>
                             <span>设置</span>
                         </NavLink>
