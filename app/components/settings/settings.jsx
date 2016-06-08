@@ -10,7 +10,7 @@ export default React.createClass({
                     <span className="title">系统设置</span>
                 </Header>
                 <Content>
-                    <p>一些系统设置项,暂无信息.</p>
+                    <p>一些系统设置项,暂无内容.</p>
                 </Content>
             </div>
         );
