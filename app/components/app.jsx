@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from './sidebar/index'
+import Sidebar from './sidebar/sidebar';
 
 export default React.createClass({
     render() {

@@ -12,10 +12,12 @@ module.exports = {
     ],
     // Server Configuration options
     devServer: {
-        contentBase: 'app/public',
+        contentBase: buildPath,
         devtool: 'eval',
         hot: true,
         inline: true,
+        colors: true,
+        progress: true,
         port: 1888,
         host: 'localhost',
         historyApiFallback: true
@@ -28,9 +30,13 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$|\.jsx$/,
+                test: /\.(js|jsx)$/,
                 loaders: ['react-hot', 'babel-loader'],
                 exclude: /node_modules/
+            },
+            {
+                test: /\.(css|scss)$/,
+                loader: 'style!css?modules&localIdentName=[name]__[local]___[hash:base64:5]!sass?sourceMap=true'
             }
         ]
     },

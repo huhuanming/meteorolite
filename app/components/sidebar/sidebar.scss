@@ -1,0 +1,9 @@
+.root {
+  width: 160px;
+  & > ul {
+    padding: 0 10px;
+    & > li {
+      padding: 8px 0;
+    }
+  }
+}
