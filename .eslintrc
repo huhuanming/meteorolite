@@ -1,0 +1,43 @@
+{
+    "parser": "babel-eslint",
+    "plugins": ["react"],
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "rules": {
+        "no-debugger": 2,
+        "quotes": [1, "single", "avoid-escape"],
+        "eol-last": [2],
+        "no-alert": 0,
+        "no-var": 2,
+        "no-mixed-requires": [0],
+        "no-underscore-dangle": [0],
+        "camelcase": 0,
+        "curly": 0,
+        "semi": 2,
+        "no-undef": 2,
+        "no-unused-expressions": 0,
+        "no-unused-vars": 1,
+        "react/display-name": 0,
+        "react/jsx-quotes": 0,
+        "react/jsx-no-undef": 2,
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/no-did-mount-set-state": 2,
+        "react/no-did-update-set-state": 2,
+        "react/no-multi-comp": 2,
+        "react/no-unknown-property": 2,
+        "react/prop-types": 2,
+        "react/react-in-jsx-scope": 2,
+        "react/self-closing-comp": 2,
+        "react/wrap-multilines": 2
+    },
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true,
+        "blockBindings": true
+    }
+}

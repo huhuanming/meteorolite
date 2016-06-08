@@ -28,6 +28,13 @@ module.exports = {
         filename: 'bundle.js'
     },
     module: {
+        preLoaders: [
+            {
+                test: /\.(js|jsx)$/,
+                loader: "eslint-loader",
+                exclude: /node_modules/
+            }
+        ],
         loaders: [
             {
                 test: /\.(js|jsx)$/,

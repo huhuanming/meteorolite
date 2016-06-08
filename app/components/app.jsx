@@ -3,6 +3,10 @@ import Sidebar from './sidebar/sidebar';
 import Container from './container/container';
 
 export default React.createClass({
+    propTypes: {
+        children: React.PropTypes.element.isRequired,
+    },
+
     render() {
         return (
             <div id="app">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
-import { requireAuth, requireAdmin } from './components/shared/authorization';
+import { requireAuth } from './components/shared/authorization';
 import App from './components/app';
 import Home from './components/home/index';
 import Devices from './components/devices/devices';
