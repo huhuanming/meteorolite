@@ -1,6 +1,6 @@
 {
   "name": "meteorolite",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "TylerChangMore@icloud.com",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:TylerChangMore/Meteorolite.git"
+  },
   "private": true,
   "devDependencies": {
     "babel-core": "^6.3.26",
