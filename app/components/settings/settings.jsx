@@ -1,7 +1,18 @@
 import React from 'react';
+import Header from '../header/header';
+import Content from '../content/content';
 
 export default React.createClass({
     render() {
-        return(<p>Settings</p>);
+        return(
+            <div>
+                <Header>
+                    <span className="title">系统设置</span>
+                </Header>
+                <Content>
+                    <p>一些系统设置项,暂无信息.</p>
+                </Content>
+            </div>
+        );
     }
 });

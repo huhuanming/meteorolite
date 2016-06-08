@@ -7,4 +7,4 @@ import './styles/style.scss';
 
 ReactDOM.render(
     <Router history={browserHistory} routes={Routes}/>,
-    document.getElementById('app'));
+    document.getElementById('meteorolite'));

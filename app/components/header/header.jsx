@@ -3,9 +3,9 @@ import React from 'react';
 export default React.createClass({
     render() {
         return(
-            <div className="container">
+            <header className="header">
                 { this.props.children }
-            </div>
+            </header>
         );
     }
 });

@@ -1,9 +1,11 @@
 .root {
+    position: fixed;
     float: left;
     width: 125px;
     height: 100%;
     background: #343f4b;
     padding-top: 20px;
+    z-index: 2;
 }
 
 .navLink {
@@ -45,7 +47,7 @@
 
 .settings {
     & > i {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 

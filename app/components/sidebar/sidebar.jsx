@@ -6,7 +6,7 @@ import Style from './sidebar.scss';
 export default React.createClass({
     render() {
         return (
-            <div className={Style.root}>
+            <header className={Style.root}>
                 <ul>
                     <li>
                         <NavIndexLink to="/" className={Style.home}>
@@ -28,12 +28,12 @@ export default React.createClass({
                     </li>
                     <li>
                         <NavLink to="settings" className={Style.settings}>
-                            <i className="fa fa-cog" aria-hidden="true"></i>
+                            <i className="fa fa-cogs" aria-hidden="true"></i>
                             <span>设置</span>
                         </NavLink>
                     </li>
                 </ul>
-            </div>
+            </header>
         );
     }
 });
