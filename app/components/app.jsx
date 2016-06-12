@@ -4,7 +4,7 @@ import Container from './container/container';
 
 export default React.createClass({
     propTypes: {
-        children: React.PropTypes.element.isRequired,
+        children: React.PropTypes.element.isRequired
     },
 
     render() {

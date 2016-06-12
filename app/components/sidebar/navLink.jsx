@@ -4,7 +4,7 @@ import Style from './sidebar.scss';
 
 export default React.createClass({
     propTypes: {
-        className: React.PropTypes.string.isRequired,
+        className: React.PropTypes.string.isRequired
     },
 
     render() {
