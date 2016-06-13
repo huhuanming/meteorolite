@@ -1,0 +1,231 @@
+// table 相关
+.flex1 {
+    flex: 1;
+}
+
+.flex1-5 {
+    flex: 1.5;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex2-5 {
+    flex: 2.5;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex3-5 {
+    flex: 3.5;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+.flex4-5 {
+    flex: 4.5;
+}
+
+.flex5 {
+    flex: 5;
+}
+
+.flex5-5 {
+    flex: 5.5;
+}
+
+.flex6 {
+    flex: 6;
+}
+
+.flex6-5 {
+    flex: 6.5;
+}
+
+.flex7 {
+    flex: 7;
+}
+
+.flex7-5 {
+    flex: 7.5;
+}
+
+.flex8 {
+    flex: 8;
+}
+
+.flex8-5 {
+    flex: 8.5;
+}
+
+.flex9 {
+    flex: 9;
+}
+
+.flex9-5 {
+    flex: 9.5;
+}
+
+.flex10 {
+    flex: 10;
+}
+
+.flex10-5 {
+    flex: 10.5;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    background-color: #fff;
+    border-spacing: 0;
+    border-collapse: collapse;
+    >thead,
+    >tbody,
+    >tfoot {
+        >tr {
+            >th,
+            >td {
+                line-height: 1.42857143;
+                vertical-align: top;
+                border: 0;
+                white-space: nowrap;
+            }
+        }
+    }
+    >thead >tr >th {
+        padding: 10px 20px;
+        line-height: 20px;
+        vertical-align: bottom; // thead 中默认底部对齐
+        font-weight: normal;
+        font-size: 12px;
+        color: #989ea6;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    >thead:first-child {
+        >tr:first-child {
+            >th,
+            >td {
+                border-top: 0;
+            }
+        }
+    }
+    >tbody {
+        >tr {
+            // cursor: pointer;
+            &.select {
+                background: #F0F0F0;
+            }
+            >td {
+                padding: 20px 20px;
+                min-width: 100px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+// tbody 中偶数行有背景色
+.table-striped {
+    >tbody >tr:nth-of-type(even) {
+        background-color: #fbfbfc;
+        &.select {
+            background: #F0F0F0;
+        }
+    }
+}
+
+.table-hover {
+    >tbody >tr:hover {
+        background-color: #f7f7f7;
+    }
+}
+
+.table-responsive {
+    min-height: .01%; // 避免在 IE9 中 hover 出错的问题
+    overflow-x: auto;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        >.table {
+            margin-bottom: 0;
+            >thead,
+            >tbody,
+            >tfoot {
+                >tr {
+                    >th,
+                    >td {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.flex-table {
+    > div {
+        display: flex;
+    }
+    .table-title {
+        height: 35px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+        h5 {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            color: #989ea6;
+            font-family: HYQiHei;
+            font-size: 12px;
+            font-weight: 300;
+            align-items: center;
+            span {
+                margin: auto 0;
+            }
+            &:first-child {
+                span {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    >.table-body {
+        &:nth-child(odd) {
+            background-color: #fbfbfc;
+        }
+        &.active {
+            background-color: #f2f3f5;
+        }
+    }
+    .table-body {
+        min-height: 25px;
+        > div {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            &:first-child {
+                .cell-start {
+                    margin-left: 20px;
+                }
+            }
+            .icon-wrap {
+                font-size: 0;
+                margin: auto 4px auto 0;
+            }
+            .title-wrap {
+                overflow: hidden;
+                max-height: 4em;
+                margin: auto 0;
+            }
+        }
+    }
+}
