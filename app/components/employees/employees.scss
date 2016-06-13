@@ -1,0 +1,38 @@
+.groupPanel {
+    padding: 20px 30px;
+    overflow: hidden;
+}
+
+.member {
+    overflow: hidden;
+    float: left;
+    width: 160px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    img {
+        float: left;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .name, .role {
+        display: block;
+        margin: 0 0 0 50px;
+        width: 88px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .name {
+        padding-top: 2px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .role {
+        font-size: 12px;
+        line-height: 1;
+        color: #999;
+        margin-top: 2px;
+    }
+}
