@@ -14,10 +14,18 @@ export default React.createClass({
                             <span>首页</span>
                         </NavIndexLink>
                     </li>
+                    {/*
+                     <li>
+                     <NavLink to="devices" className={Style.devices}>
+                     <i className="fa fa-desktop" aria-hidden="true"></i>
+                     <span>设备</span>
+                     </NavLink>
+                     </li>
+                    */}
                     <li>
-                        <NavLink to="devices" className={Style.devices}>
-                            <i className="fa fa-desktop" aria-hidden="true"></i>
-                            <span>设备</span>
+                        <NavLink to="repository" className={Style.devices}>
+                            <i className="fa fa-server" aria-hidden="true"></i>
+                            <span>仓库</span>
                         </NavLink>
                     </li>
                     <li>

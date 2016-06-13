@@ -1,0 +1,19 @@
+.header {
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #323c42;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    & > h2 {
+        font-size: 14px;
+    }
+}
+
+table {
+    thead {
+        color: #5a6978;
+        th {
+            font-weight: 400;
+        }
+    }
+}
