@@ -5,11 +5,14 @@ const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 module.exports = {
     // Entry points to the project
-    entry: [
-        'webpack/hot/dev-server',
-        'webpack/hot/only-dev-server',
-        path.join(__dirname, '/app/index.js')
-    ],
+    entry: {
+        app: [
+            'webpack/hot/dev-server',
+            'webpack/hot/only-dev-server',
+            path.join(__dirname, '/app/index.js')
+        ],
+        vendors: ['react', 'react-dom', 'react-router', 'react-redux', 'redux']
+    },
     // Server Configuration options
     devServer: {
         contentBase: buildPath,
@@ -25,13 +28,13 @@ module.exports = {
     devtool: 'eval',
     output: {
         path: buildPath,
-        filename: 'bundle.js'
+        filename: 'app.js'
     },
     module: {
         preLoaders: [
             {
                 test: /\.(js|jsx)$/,
-                loader: "eslint-loader",
+                loader: 'eslint-loader',
                 exclude: /node_modules/
             }
         ],
@@ -57,10 +60,11 @@ module.exports = {
             }
         ]
     },
-    resolve:{
+    resolve: {
         extensions: ['', '.js', '.json', '.jsx']
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js', Infinity),
         // Enables Hot Modules Replacement
         new webpack.HotModuleReplacementPlugin(),
         // Allows error warnings but does not stop compiling.

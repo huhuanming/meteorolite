@@ -1,52 +1,53 @@
 {
-  "name": "meteorolite",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "webpack-dev-server --config webpack-dev-server.config.js"
-  },
-  "author": "TylerChangMore@icloud.com",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git@git.coding.net:TylerChangMore/Meteorolite.git"
-  },
-  "private": true,
-  "devDependencies": {
-    "babel-core": "^6.3.26",
-    "babel-eslint": "^6.0.4",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "css-loader": "^0.23.1",
-    "eslint": "^2.11.1",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-loader": "^1.3.0",
-    "eslint-plugin-import": "^1.8.1",
-    "eslint-plugin-jsx-a11y": "^1.3.0",
-    "eslint-plugin-react": "^5.1.1",
-    "file-loader": "^0.8.5",
-    "html-webpack-plugin": "^2.7.2",
-    "node-sass": "^3.7.0",
-    "react-hot-loader": "^1.3.0",
-    "redux-devtools": "^3.3.1",
-    "sass-loader": "^3.2.0",
-    "style-loader": "^0.13.1",
-    "transfer-webpack-plugin": "^0.1.4",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
-  },
-  "dependencies": {
-    "font-awesome": "^4.6.3",
-    "immutable": "^3.8.1",
-    "lodash": "^4.13.1",
-    "qrcode.react": "^0.6.1",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1",
-    "react-redux": "^4.4.5",
-    "react-router": "^2.4.1",
-    "redux": "^3.5.2"
-  }
+    "name": "meteorolite",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack-dev-server --config webpack-dev-server.config.js",
+        "deploy": "NODE_ENV=production webpack -p --config webpack-production.config.js"
+    },
+    "author": "TylerChangMore@icloud.com",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git@git.coding.net:TylerChangMore/Meteorolite.git"
+    },
+    "private": true,
+    "devDependencies": {
+        "babel-core": "^6.3.26",
+        "babel-eslint": "^6.0.4",
+        "babel-loader": "^6.2.4",
+        "babel-preset-es2015": "^6.3.13",
+        "babel-preset-react": "^6.3.13",
+        "css-loader": "^0.23.1",
+        "eslint": "^2.11.1",
+        "eslint-config-airbnb": "^9.0.1",
+        "eslint-loader": "^1.3.0",
+        "eslint-plugin-import": "^1.8.1",
+        "eslint-plugin-jsx-a11y": "^1.3.0",
+        "eslint-plugin-react": "^5.1.1",
+        "file-loader": "^0.8.5",
+        "html-webpack-plugin": "^2.7.2",
+        "node-sass": "^3.7.0",
+        "react-hot-loader": "^1.3.0",
+        "redux-devtools": "^3.3.1",
+        "sass-loader": "^3.2.0",
+        "style-loader": "^0.13.1",
+        "transfer-webpack-plugin": "^0.1.4",
+        "url-loader": "^0.5.7",
+        "webpack": "^1.12.9",
+        "webpack-dev-server": "^1.14.0"
+    },
+    "dependencies": {
+        "font-awesome": "^4.6.3",
+        "immutable": "^3.8.1",
+        "lodash": "^4.13.1",
+        "qrcode.react": "^0.6.1",
+        "react": "^15.0.1",
+        "react-dom": "^15.0.1",
+        "react-redux": "^4.4.5",
+        "react-router": "^2.4.1",
+        "redux": "^3.5.2"
+    }
 }
