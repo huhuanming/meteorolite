@@ -9,7 +9,7 @@ export default React.createClass({
     },
 
     render() {
-        if (/^(\/signin|\/signup)/.test(this.props.location.pathname)) {
+        if (/^(signin|signup)/.test(this.props.location.pathname)) {
             return (
                 <div id="app">
                     { this.props.children }
