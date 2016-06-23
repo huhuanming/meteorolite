@@ -11,6 +11,19 @@
     box-shadow: 0 1px 3px 0 rgba(52,63,75,.1);
 }
 
+.signInBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -240px;
+    padding: 10px 40px;
+    width: 480px;
+    height: 320px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(52,63,75,.1);
+}
+
 .title {
     text-align: center;
 }
@@ -39,7 +52,7 @@
 .submitBtn {
     display: block;
     margin: 20px auto;
-    padding: 14px 60px;
+    padding: 12px 40px;
     border: 0;
     border-radius: 8px;
     color: #fff;

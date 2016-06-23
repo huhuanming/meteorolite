@@ -4,7 +4,6 @@ import Style from './sign.scss';
 
 export default React.createClass({
     render() {
-        console.log(Style);
         return(
             <div className={Style.signUpBox}>
                 <h1 className={Style.title}>注册</h1>
