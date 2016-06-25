@@ -23,19 +23,19 @@ export default React.createClass({
                      </li>
                     */}
                     <li>
-                        <NavLink to="repository" className={Style.devices}>
+                        <NavLink to="/repository" className={Style.devices}>
                             <i className="fa fa-server" aria-hidden="true"></i>
                             <span>仓库</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="employees" className={Style.employees}>
+                        <NavLink to="/employees" className={Style.employees}>
                             <i className="fa fa-group" aria-hidden="true"></i>
                             <span>员工</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="settings" className={Style.settings}>
+                        <NavLink to="/settings" className={Style.settings}>
                             <i className="fa fa-cogs" aria-hidden="true"></i>
                             <span>设置</span>
                         </NavLink>

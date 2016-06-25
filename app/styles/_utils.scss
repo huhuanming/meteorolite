@@ -1,0 +1,70 @@
+/* 清除 float */
+.clearfix {
+    *zoom: 1;
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.show {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.hide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+input, textarea {
+    &.warn {
+        border: 1px solid #f00;
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.setting-block .form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.form-horizontal.settingInner .form-group{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.circle {
+    border-radius: 50%;
+}

@@ -10,7 +10,7 @@ export default React.createClass({
 
     render() {
         return(
-            <div className={`content ${Style.groupPanel}`}>
+            <div className={`content ${Style.panel}`}>
                 <Header groupTitle={this.props.groupTitle}/>
                 <Members memberRole={this.props.groupTitle}/>
             </div>
