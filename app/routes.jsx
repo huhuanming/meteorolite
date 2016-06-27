@@ -10,6 +10,7 @@ import Repository from './components/repository/repository';
 import Template from './components/template/template';
 import Employees from './components/employees/employees';
 import Addition from './components/employees/addition';
+import Qrcode from './components/qrcode/qrcode';
 import Settings from './components/settings/settings';
 import NotFound from './components/others/not-found';
 
@@ -24,6 +25,7 @@ export default (
         <Route path="employees" onEnter={ requireAuth } component={ Employees }>
             <Route path="addition" onEnter={ requireAuth } component={ Addition }/>
         </Route>
+        <Route path="qrcode" onEnter={ requireAuth } component={ Qrcode }/>
         <Route path="settings" onEnter={ requireAuth } component={ Settings }/>
         <Route path="*" component={ NotFound }/>
     </Route>

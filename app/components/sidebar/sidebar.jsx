@@ -23,7 +23,7 @@ export default React.createClass({
                      </li>
                     */}
                     <li>
-                        <NavLink to="/repository" className={Style.devices}>
+                        <NavLink to="/repository" className={Style.repository}>
                             <i className="fa fa-server" aria-hidden="true"></i>
                             <span>仓库</span>
                         </NavLink>
@@ -32,6 +32,12 @@ export default React.createClass({
                         <NavLink to="/employees" className={Style.employees}>
                             <i className="fa fa-group" aria-hidden="true"></i>
                             <span>员工</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/qrcode" className={Style.qrcode}>
+                            <i className="fa fa-qrcode" aria-hidden="true"></i>
+                            <span>二维码</span>
                         </NavLink>
                     </li>
                     <li>

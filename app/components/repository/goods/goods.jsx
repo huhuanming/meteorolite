@@ -1,5 +1,5 @@
 import React from 'react';
-import Content from '../content/content';
+import Content from '../../content/content';
 import Header from './header';
 
 export default React.createClass({

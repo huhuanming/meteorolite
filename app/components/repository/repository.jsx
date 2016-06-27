@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../header/header';
-import Goods from '../goods/goods';
+import Goods from './goods/goods';
 
 export default React.createClass({
     render() {

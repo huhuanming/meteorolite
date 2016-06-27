@@ -1,7 +1,7 @@
 .root {
     position: fixed;
     float: left;
-    width: 120px;
+    width: 100px;
     height: 100%;
     background: #343f4b;
     padding-top: 20px;
@@ -10,17 +10,17 @@
 
 .navLink {
     display: block;
-    padding: 10px 18px 8px 18px;
+    padding: 10px 10px 8px 10px;
     color: #748392;
     & > i {
         display: inline-block;
-        width: 30px;
+        width: 26px;
         text-align: center;
     }
     & > span {
         position: absolute;
         display: inline-block;
-        left: 60px;
+        left: 42px;
     }
     &:hover {
         color: #ffffff;
@@ -29,13 +29,13 @@
 
 .home {
     & > i {
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
-.devices {
+.repository {
     & > i {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
@@ -45,9 +45,15 @@
     }
 }
 
+.qrcode {
+    & > i {
+        font-size: 18px;
+    }
+}
+
 .settings {
     & > i {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
