@@ -3,14 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Reducers
-import { createStore, applyMiddleware } from 'redux';
-import { Provider } from 'react-redux';
+import {createStore, applyMiddleware} from 'redux';
+import {Provider} from 'react-redux';
 import Reducer from './reducers/index';
 import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
 
 // React Router
-import { Router, browserHistory } from 'react-router';
+import {Router, browserHistory} from 'react-router';
 import Routes from './routes';
 
 // Style
