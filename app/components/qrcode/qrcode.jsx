@@ -1,9 +1,26 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Header from '../header/header';
 import Content from '../content/content';
 import Qrcode from 'qrcode.react';
+import { fetchQrcodes } from '../../actions/qrcode';
 
-export default React.createClass({
+const select = (state) => {
+    return {
+        me: state.me,
+        enterprise: state.enterprise
+    };
+};
+
+export default connect(select)(React.createClass({
+    propTypes: {
+        dispatch: React.PropTypes.func.isRequired
+    },
+
+    componentDidMount() {
+        this.props.dispatch(fetchQrcodes());
+    },
+
     render() {
         return(
             <div>
@@ -16,4 +33,4 @@ export default React.createClass({
             </div>
         );
     }
-});
+}));
